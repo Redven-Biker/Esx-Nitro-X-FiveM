@@ -97,6 +97,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(0)
 
 		if guiEnabled then
+			EnableGui(true)
 			DisableControlAction(0, 1,   true) -- LookLeftRight
 			DisableControlAction(0, 2,   true) -- LookUpDown
 			DisableControlAction(0, 106, true) -- VehicleMouseControlOverride

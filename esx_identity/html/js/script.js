@@ -12,6 +12,7 @@ $(function() {
 	};
 	
 	$("#register").submit(function(event) {
+		
 		event.preventDefault(); // Prevent form from submitting
 		
 		// Verify date
@@ -21,13 +22,16 @@ $(function() {
 		if (dateCheck == "Invalid Date") {
 			date == "invalid";
 		}
+		
+		if($("input[type='radio'][name='sex']:checked").val() != undefined){
+			$.post('http://esx_identity/register', JSON.stringify({
+				firstname: $("#firstname").val(),
+				lastname: $("#lastname").val(),
+				dateofbirth: date,
+				sex: $("input[type='radio'][name='sex']:checked").val(),
+				height: $("#height").val()
+			}));
+		}
 
-		$.post('http://esx_identity/register', JSON.stringify({
-			firstname: $("#firstname").val(),
-			lastname: $("#lastname").val(),
-			dateofbirth: date,
-			sex: $("input[type='radio'][name='sex']:checked").val(),
-			height: $("#height").val()
-		}));
 	});
 });
