@@ -23,6 +23,15 @@
     $('.validate-form').on('submit',function(){
         var check = true;
 
+        if(!(document.getElementsByName('sex')[0].checked || document.getElementsByName('sex')[1].checked)){
+            document.getElementById("test1").style.color = "red";
+            document.getElementById("test2").style.color = "red";
+            return false;
+        } else {
+            document.getElementById("test1").style.color = "black";
+            document.getElementById("test2").style.color = "black";
+        }
+
         for(var i=0; i<input.length; i++) {
             if(validate(input[i]) == false){
                 showValidate(input[i]);
