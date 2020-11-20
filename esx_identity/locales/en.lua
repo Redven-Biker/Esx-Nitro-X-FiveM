@@ -1,11 +1,11 @@
 Locales['en'] = {
-  ['show_registration'] = 'show Registration Menu',
-  ['show_active_character'] = 'show Active Character',
-  ['delete_character'] = 'delete Your Character And Create A New One',
-  ['deleted_character'] = 'your character has been deleted.',
-  ['not_registered'] = 'you do not have a character reistered.',
-  ['active_character'] = '~b~active Character:~s~ %s %s',
-  ['already_registered'] = 'you already have a character registered.',
-  ['failed_identity'] = 'failed to set your character, try again later or contact the server admin!',
-  ['create_a_character'] = 'you have to create a character in order to play.'
+  ['show_registration'] = 'Show Registration Menu',
+  ['show_active_character'] = 'Show Active Character',
+  ['delete_character'] = 'Delete Your Character And Create A New One',
+  ['deleted_character'] = 'Your Character Has Been Deleted.',
+  ['not_registered'] = 'You Do Not Have A Character Registered.',
+  ['active_character'] = '~b~Active Character:~s~ %s %s',
+  ['already_registered'] = 'You Already Have A Character Registered.',
+  ['failed_identity'] = 'Failed To Set Your Character, Try Again Later Or Contact The Server Admin!',
+  ['create_a_character'] = 'You Have To Create A Character In Order To Play.'
 }
